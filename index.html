@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jWebFont Demo</title>
+  <style>
+  div {
+    color: blue;
+  }
+  span {
+    color: red;
+  }
+  </style>
+</head>
+<body>
+
+  <h1>jWebFont Demo</h1>
+
+  <hr />
+
+  <div id="container">
+
+    <h2 data-webfont="Andika">This header uses Andika webfont</h2>
+    <p data-webfont="Andika">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor felis mauris, venenatis lacinia odio vulputate non. Integer hendrerit quis lacus et viverra. Etiam varius sodales elit at vulputate. Donec vitae porttitor dolor. Suspendisse aliquet nulla vel tellus aliquam, sed iaculis mi pharetra. In et erat velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce accumsan augue ultrices massa rhoncus, at facilisis massa faucibus. Donec luctus lorem viverra ornare malesuada. Donec volutpat at mi scelerisque imperdiet. Morbi blandit urna justo, quis scelerisque eros sollicitudin at. Nunc tincidunt, nulla at tempor bibendum, magna leo luctus dolor, nec pretium justo tortor in eros. Nam congue ipsum nec mi cursus, ut auctor purus facilisis.</p>
+
+    <h2 data-webfont="Life Savers">This header uses Life Savers webfont</h2>
+
+    <h2 data-webfont="Life Savers">This header also uses Life Savers webfont</h2>
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript" src="jquery.jwebfont.js"></script>
+
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+
+    $('#container').jwebfont();
+
+  });
+
+  </script>
+
+</body>
+</html>
